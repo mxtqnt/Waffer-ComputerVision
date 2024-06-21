@@ -36,14 +36,14 @@ for numero_imagem, imagem in enumerate(os.listdir(caminho), start=1):
     cv2.imwrite(('Gaussian\\' + str(i) + '.png'), gaussian)
     cv2.imwrite(('Contornadas\\' + str(i) + '.png'), contourImg)
 
-    # cv2.namedWindow('Contours', cv2.WINDOW_NORMAL)
-    # cv2.resizeWindow('Contours', h//4, w//4)
-    # cv2.imshow("Contours", contourImg)
+    cv2.namedWindow('Contours', cv2.WINDOW_NORMAL)
+    cv2.resizeWindow('Contours', h//4, w//4)
+    cv2.imshow("Contours", contourImg)
 
-    # cv2.namedWindow('img', cv2.WINDOW_NORMAL)
-    # cv2.resizeWindow('img', h//4, w//4)
-    # cv2.imshow('img', image)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
+    cv2.namedWindow('img', cv2.WINDOW_NORMAL)
+    cv2.resizeWindow('img', h//4, w//4)
+    cv2.imshow('img', image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
     i = i + 1
